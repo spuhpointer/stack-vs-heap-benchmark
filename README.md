@@ -25,6 +25,24 @@ in the loop. The measurement result is time taken for number of allocation attem
 with different total chunk sizes.
 
 
+## Preparation
+
+Project use github/endurox-dev/endurox standard library for plotting the 
+results and measuring the time spent. Also R is used for generating pictures.
+
+To install dependencies on Ubuntu quickly and run the benchmark do:
+
+```bash
+$ sudo apt-get install r-base
+$ wget https://www.endurox.org/attachments/download/310/endurox-6.0.2-1.ubuntu18_04_GNU_epoll.x86_64_64.deb
+$ sudo dpkg -i endurox-6.0.2-1.ubuntu18_04_GNU_epoll
+$ git clone https://github.com/spuhpointer/stack-vs-heap-benchmark
+$ cd stack-vs-heap-benchmark
+$ ./build.sh
+```
+
+After wards see noinit1.png, filled1.png, noinit2.png, filled2.png.
+
 # Tests
 
 Test machine is: Intel(R) Core(TM) i7-6600U CPU, Linux 64 bit, 4.15.0-50-generic, Spectre and
