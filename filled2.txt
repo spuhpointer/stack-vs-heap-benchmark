@@ -1,0 +1,17 @@
+"Configuration" "MsgSize" "CallsPerSec"
+"Stack alloc" 258 49
+"Stack alloc" 9249 1675
+"Stack alloc" 18243 3355
+"Stack alloc" 27249 5484
+"Stack alloc" 36243 6609
+"Stack alloc" 45243 8239
+"Stack alloc" 54243 9868
+"Stack alloc" 63234 11514
+"Heap alloc" 258 78
+"Heap alloc" 9249 1710
+"Heap alloc" 18243 3326
+"Heap alloc" 27249 5000
+"Heap alloc" 36243 6567
+"Heap alloc" 45243 8214
+"Heap alloc" 54243 9845
+"Heap alloc" 63234 11465
