@@ -27,7 +27,8 @@ with different total chunk sizes.
 
 # Tests
 
-Test machine is: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz, Linux 64 bit, 4.15.0-39-generic.
+Test machine is: Intel(R) Core(TM) i7-6600U CPU, Linux 64 bit, 4.15.0-50-generic, Spectre and
+Meltdown patches disabled.
 
 ## Stack VS Heap - No INIT results -O1
 
