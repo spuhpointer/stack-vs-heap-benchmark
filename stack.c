@@ -6,6 +6,7 @@
 
 static int M_fill = 0;
 long sum, sump;
+char rnd_block[1000000];
 
 void fill_block(char *block, int size)
 {
@@ -13,9 +14,9 @@ void fill_block(char *block, int size)
 
 	if (M_fill)
 	{
-		for (i=0; i<size; i++)
+		memcpy(block, rnd_block, size);
+		for (i=0; i<size; i+=10)
 		{
-			block[i] = i%255;
 			sum+=block[i];
 		}
 	}
@@ -112,6 +113,7 @@ int main(int argc, char **argv)
 	ndrx_stopwatch_t w;
 	long result;
 	long loops;
+	time_t t;
 	
 	if (argc < 5)
 	{
@@ -133,6 +135,11 @@ int main(int argc, char **argv)
 	if ('f'==argv[2][0])
 	{
 		M_fill = 1;
+	}
+
+	for (i=0; i<sizeof(rnd_block); i++)
+	{
+		rnd_block[i] = rand() % 255;
 	}
 
 	for (i=30; i<8000; i+=1024)
